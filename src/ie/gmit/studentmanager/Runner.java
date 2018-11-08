@@ -1,5 +1,7 @@
 package ie.gmit.studentmanager;
 
+import java.io.Serializable;
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -10,7 +12,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class Runner extends Application {
+public class Runner extends Application implements Serializable {
+	
+	 StudentManager sm = new StudentManager();
+	 
 
 	@Override
 	public void start(Stage primaryStage) {
